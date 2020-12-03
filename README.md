@@ -169,6 +169,7 @@ In order for this test to pass, you have must allow when your exclusion route, d
 
 #### transactions.routes.ts
 
+```js
 transactionsRouter.delete('/:id', async (request, response) => {
   const id = request.params.id;
 
@@ -178,6 +179,7 @@ transactionsRouter.delete('/:id', async (request, response) => {
 
   return response.json(transaction);
 });
+```
 
 #### DeleteTransactionService.ts
 
